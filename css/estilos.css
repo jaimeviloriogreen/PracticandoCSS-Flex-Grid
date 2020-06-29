@@ -1,0 +1,177 @@
+:root{
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #F0F3F5;
+    --color4: #df405a;
+    --color5: #bd1550; 
+    --color6: #2a3d54;
+    --color7: #2b90d9;
+    --color8: #dfe3e6;
+    --color9: rgba(0, 0, 0, 0.329);
+
+    --fuente1: 'Roboto', sans-serif;
+    --fuente2: 'Quicksand', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: var(--color3);
+}
+
+/* Menu de Navegacion */
+.menu{
+    width: 100%;
+    background-color: var(--color6);
+    color: var(--color1);
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 80px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 2rem;
+}
+.logo h1{
+    font-size: 1.5rem;
+    font-family: var(--fuente2);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 2rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.items li{
+    /* Elementos li por separado */
+    flex: 1 0 0;
+    text-align: center;
+}
+.items li a{
+    text-decoration: none;
+    color: var(--color1);
+    font-family: var(--fuente1);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+/* Seccion Formulario */
+.seccionFormulario{
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto;
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,.3);
+    background-color: var(--color1);
+    border-radius: 5px;
+    /* GRID */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;   
+}
+.formulario{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.5rem;
+}
+input[type="text"]{
+    margin: .4rem 0px;
+    font-size: 1.125rem;
+    padding: .4rem;
+    font-family: var(--fuente2); 
+    border: 1px solid var(--color8);
+}
+textarea{
+    /* Establecer al Textarea un tamaño fijo */
+    resize: vertical;
+    min-height: 200px;
+    max-height: 200px;
+    /*  */
+    margin: .4rem 0px;
+    font-size: 1.125rem;
+    padding:.4rem;
+    border: 1px solid var(--color8);
+    font-family: var(--fuente2);
+}
+input[type="submit"]{
+    width: 5rem;
+    font-size: 1rem;
+    background-color: var(--color5);
+    border: none;
+    padding: .4rem 0px;
+    color: var(--color1);
+    border-radius: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: .4rem 0px;
+}
+/* Efecto Hover al Boton Sumit */
+input[type="submit"]:hover{
+    background-color:var(--color4);
+}
+/* Transicion del color en el Hover del boton Submit */
+input[type="submit"]{
+    transition: background-color 400ms ease-in-out;
+}
+/*Cambios en el placeholder del Input y el Textarea */
+input[type="text"]::placeholder{
+    color: var(--color9);
+}
+textarea::placeholder{
+    color:var(--color9);
+}
+/* Estilos al cuadro saludos */
+.saludo{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color6);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,.3);
+    color:var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.saludo > p{
+    font-size: 2rem;
+    font-family: var(--fuente2);
+}
+/* Fin CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
